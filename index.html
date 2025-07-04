@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BMV - Examen de Práctica</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-------------- WELCOME SCREEN --------------->
+  <div class='screen' id='welcome-screen'>
+    <h1>BMV - Practice</h1>
+    <button class="start-btn">Start</button>
+    <br>
+    <br>
+    <hr>
+    <h2 style="text-align: center;">Other study methods:</h3>
+    <button onclick="window.location.href='https://www.in.gov/bmv/licenses-permits-ids/files/drivers-manual.pdf';">
+      Indiana Driver's Manual (The questions come from here)
+    </button>
+
+    <button onclick="window.location.href='https://apps.apple.com/us/app/dmv-genius-permit-practice/id513850893';">
+      DMV Genie (I used this, i think they switched to pay to use but you can try)
+    </button>
+
+    <button onclick="window.location.href='https://youtu.be/lIFlHS88HOs?si=RULcBls29do5SJeU';">
+      Youtube Practice Test with explanations
+    </button>
+  </div>
+
+  <!-------------- CATEGORY SCREEN --------------->
+	<div class='screen' id='category-screen'>
+		<h1>Select a category</h1>
+    <h3 text-align="center">After each question, a page number will show that corresponds with the driver's manual</h2>
+    <h3>You'll have 45 seconds to respond to each question to keep your mind focused <br>(The actual test will not have a time limit)</h3>
+      <div id="category-set">
+    	</div>
+	</div>
+  
+<!-------------- QUESTION SCREEN --------------->
+<div class='screen' id='question-screen'>
+    <h1 id="timer">-</h1>
+    <h4 id="category">Category</h4>
+    <div id="image-holder"></div>
+    <h1 id="question">Question here</h1>
+    <div id="answer-set">
+      <button class="answer-btn" id="correctAnswer">Correct Answer</button>
+      <button class="answer-btn" id="incorrectAnswer1">Incorrect Answer</button>
+      <button class="answer-btn" id="incorrectAnswer2">Incorrect Answer</button>
+      <button class="answer-btn" id="incorrectAnswer3">Incorrect Answer</button>
+    </div>
+    <h1 id="feedback">Feedback here</h1>
+    
+  </div>
+
+
+<!-------------- THANK YOU SCREEN --------------->
+<div class='screen' id='thankyou-screen'>
+    <h1>Completed</h1>
+    <!-- <h3 align="center">You're still a failure</h3> -->
+    <h4 id='game-results'></h4>
+     <button onclick="window.location.href='/';">Restart?</button>
+     <br>
+     <div style="text-align: center;">
+  <img src="https://media1.tenor.com/m/BEqC9kz4AeUAAAAd/yippee-yippee-gif.gif" alt="t e t o" width="150px">
+</div>
+  </div>
+   
+  
+  <script src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-trivia/src/trivia.js"></script> <!-- iDEW trivia -->
+</body>
+
+</html>
